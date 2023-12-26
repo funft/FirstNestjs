@@ -10,7 +10,7 @@ import { databaseProviders } from './config/mongo/database.providers';
 @Module({
   imports: [TodosModule],
   controllers: [AppController, TodoController],
-  providers: [AppService,TodosService,...todosProviders, ...databaseProviders],
+  providers: [AppService],
   exports: []
 })
 export class AppModule {}
